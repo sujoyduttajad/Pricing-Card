@@ -204,6 +204,12 @@
     color: var(--first-color);
     margin-right: var(--mb-0-5);
   }
+
+  .card__list-icon-2 {
+    font-size: 1.5rem;
+    color: #14CA27;
+    margin-right: var(--mb-0-5);
+  }
   
   .card__button {
     padding: 1.25rem;
