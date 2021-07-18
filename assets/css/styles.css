@@ -178,6 +178,7 @@
     left: 0;
     bottom: 0;
     clip-path: polygon(0 100%, 50% 0, 100% 100%);
+    border: 0;
   }
   
   .card__pricing::before {
@@ -246,7 +247,7 @@
   }
   
   /* For medium devices */
-  @media screen and (min-width: 568px) {
+  @media screen and (min-width: 568px) and (max-width: 968px) {
     .card__container {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -259,7 +260,7 @@
   }
   
   /* For large devices */
-  @media screen and (min-width: 968px) {
+  @media screen and (min-width: 969px) and (max-width: 4040px) {
     .container {
       margin-left: auto;
       margin-right: auto;
