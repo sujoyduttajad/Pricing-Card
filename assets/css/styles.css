@@ -210,6 +210,12 @@
     color: #14CA27;
     margin-right: var(--mb-0-5);
   }
+
+  .card__list-icon-3 {
+    font-size: 1.5rem;
+    color: #FFD700;
+    margin-right: var(--mb-0-5);
+  }
   
   .card__button {
     padding: 1.25rem;
