@@ -41,7 +41,7 @@
     :root {
       --biggest-font-size: 2.125rem;
       --h2-font-size: 1.5rem;
-      --normal-font-size: 1rem;
+      --normal-font-size: 20px;
       --small-font-size: .875rem;
       --smaller-font-size: .813rem;
       --tiny-font-size: .688rem;
@@ -110,8 +110,8 @@
   }
   
   .card__header-circle {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     background-color: var(--first-color-lighter);
     border-radius: 50%;
     margin-bottom: var(--mb-1);
@@ -138,6 +138,8 @@
     width: 60px;
     height: 88px;
     right: 1.5rem;
+    border: none;
+    outline: none;
     top: -1rem;
     padding-top: 1.25rem;
     text-align: center;
@@ -187,12 +189,16 @@
     background-color: var(--first-color-alt);
     top: 0;
     left: -14px;
+    border: none;
     clip-path: polygon(0 100%, 100% 0, 100% 100%);
   }
   
   .card__list {
     row-gap: .5rem;
-    margin-bottom: var(--mb-2);
+    margin-bottom: 5px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
   }
   
   .card__list-item {
@@ -247,9 +253,9 @@
   }
   
   /* For medium devices */
-  @media screen and (min-width: 568px) and (max-width: 968px) {
+  @media screen and (min-width: 568px) and (max-width: 1024px) {
     .card__container {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
     .card__content {
       grid-template-rows: repeat(2, max-content);
@@ -260,13 +266,14 @@
   }
   
   /* For large devices */
-  @media screen and (min-width: 969px) and (max-width: 4040px) {
+  @media screen and (min-width: 1025px) and (max-width: 4040px) {
     .container {
       margin-left: auto;
       margin-right: auto;
     }
     .card {
       height: 100vh;
+      width: 100rem;
       align-items: center;
     }
     .card__container {
